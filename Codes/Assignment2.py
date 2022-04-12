@@ -11,8 +11,6 @@ ball from Bag B?
 """
 
 from math import comb
-from fractions import Fraction
-from decimal import Decimal
 
 def main():
     Pr_X1 = comb(4,2)/comb(7,2)  # Probability that both balls drawn are white from bag A
