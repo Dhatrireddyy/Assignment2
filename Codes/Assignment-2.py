@@ -17,7 +17,7 @@ def main():
     Pr_2 = 3/6  # Probability that second ball drawn from bag A is white given event X_1 occured
     Pr_3 = 4/6  # Probability that second ball drawn from bag A is white given event X_1 is not occured
     Pr_4 = 5/10 # Probability that the ball drawn from bag B is white given both balls drawn are white
-    Pr_5= 3/10  # Probability that the ball drawn from bag B is white given both balls drawn are black
+    Pr_5 = 3/10  # Probability that the ball drawn from bag B is white given both balls drawn are black
     Pr_6 = 4/10 # Probability that the ball drawn from bag B is white given balls drawn are white and black
 
     #Output
