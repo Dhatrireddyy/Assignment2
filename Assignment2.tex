@@ -1,0 +1,45 @@
+\documentclass[journal,11pt,twocolumn]{IEEEtran}
+
+\usepackage{amsmath}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\newcommand*{\permcomb}[4][0mu]{{{}^{#3}\mkern#1#2_{#4}}}
+\newcommand*{\comb}[1][-1mu]{\permcomb[#1]{C}}
+
+\title{Assignment 2}
+\author{Velma Dhatri Reddy \\ \normalsize AI21BTECH11030 \\ \vspace*{10pt} \Large ICSE 2019 Grade 12}
+\begin{document}
+\maketitle
+\textbf{Question 10:}
+Bag A contains 4 white balls and 3 black balls, while Bag B contains 3 white balls and 5 black balls. Two balls are drawn from Bag A and placed in Bag B. Then, what is the probability of drawing a white ball from Bag B?
+
+\textbf{Solution:} Let $X=\cbrak{0,1}$ be a random variable representing the bags and let $Y=\cbrak{0,1}$ be a random variable represent the colour of the ball.
+
+See Tables 
+	\eqref{table:table-1}
+	and 
+	\eqref{table:table-2} 
+\begin{table}[ht!]
+	\input{tables/table-1.tex}
+	\vspace*{5pt}
+\caption{}
+	\label{table:table-1}
+\end{table}
+\begin{table}[ht!]
+	\input{tables/table-2.tex}
+	\vspace*{5pt}
+\caption{}
+	\label{table:table-2}
+\end{table}
+for the input probabilities.
+The desired probability is then obtained from Table \eqref{table:table-2} as
+
+\begin{align}
+    \pr{Y=0|X=1} &= P_1\times\dfrac{5}{10} + P_2\times\dfrac{3}{10}+ P_3\times\dfrac{4}{10}\\
+    &= \dfrac{2}{7}\times\dfrac{5}{10} + \dfrac{1}{7}\times\dfrac{3}{10} + \dfrac{4}{7}\times\dfrac{4}{10}\\
+    &= \dfrac{1}{7} + \dfrac{3}{70} + \dfrac{16}{70}\\
+    &= \dfrac{29}{70}
+\end{align}
+Hence, the probability of drawing a white ball from bag B is $\dfrac{29}{70}$.
+
+\end{document}
